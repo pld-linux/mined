@@ -1,5 +1,5 @@
 Summary:	Mined is a Unicode-capable small and easy to use text editor
-Summary(pl):	Mined jest korzystaj±cym z unikodu, ma³ym, prostym w u¿yciu edytorem
+Summary(pl):	Mined - korzystaj±cy z unikodu, ma³y, prosty w u¿yciu edytor
 Name:		mined
 Version:	2000.5
 Release:	0.1
@@ -23,7 +23,13 @@ visible indications of special characters (esp. TABs and different
 line-ends).
 
 %description -l pl
-# TODO
+Mined to edytor tekstu, ma³y i ³atwy w u¿yciu, a jednak potê¿ny.
+Umo¿liwia korzystanie z unikodu przy u¿yciu kodowania UTF-8
+(konwertuje te¿ wej¶cie w UTF-16; mo¿e tak¿e obs³u¿yæ mieszane
+8/16-bitowe zestawy znaków u¿ywane dla jêzyka chiñskiego). Ma obs³ugê
+myszy (na terminalach tekstowych), menu, pasek przewijania i widoczne
+oznaczenia znaków specjalnych (szczególnie TABów i ró¿nych znaków
+koñca linii).
 
 %prep
 %setup -q
@@ -31,12 +37,13 @@ line-ends).
 
 %build
 cd src
-%{__make} -f makefile.linux prefix=/usr \
-		bindir=%{_bindir} \
-		helpdir=%{_datadir}/mined \
-		mandir=%{_mandir} \
-		OPT="%{rpmcflags}" \
-		%{!?debug:DEBUG=}
+%{__make} -f makefile.linux \
+	prefix=%{_prefix} \
+	bindir=%{_bindir} \
+	helpdir=%{_datadir}/mined \
+	mandir=%{_mandir} \
+	OPT="%{rpmcflags}" \
+	%{!?debug:DEBUG=}
 
 %install
 rm -rf $RPM_BUILD_ROOT
