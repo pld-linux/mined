@@ -6,6 +6,7 @@ Release:	0.1
 License:	GPL
 Group:		Applications/Editors
 Vendor:		Thomas Wolff <mined@towo.net>
+#Source0Download:	http://towo.net/mined/download.html
 Source0:	http://towo.net/mined/%{name}-%{version}.tar.gz
 # Source0-md5:	135f2411359f61f994743df9ed5af1f7
 #Source1:	%{name}.desktop
