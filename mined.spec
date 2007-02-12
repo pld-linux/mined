@@ -1,5 +1,5 @@
 Summary:	Mined is a Unicode-capable small and easy to use text editor
-Summary(pl):	Mined - korzystaj±cy z unikodu, ma³y, prosty w u¿yciu edytor
+Summary(pl.UTF-8):   Mined - korzystajÄ…cy z unikodu, maÅ‚y, prosty w uÅ¼yciu edytor
 Name:		mined
 Version:	2000.5
 Release:	0.1
@@ -24,14 +24,14 @@ It has mouse support (in text mode terminals), menus, a scrollbar and
 visible indications of special characters (esp. TABs and different
 line-ends).
 
-%description -l pl
-Mined to edytor tekstu, ma³y i ³atwy w u¿yciu, a jednak potê¿ny.
-Umo¿liwia korzystanie z unikodu przy u¿yciu kodowania UTF-8
-(konwertuje te¿ wej¶cie w UTF-16; mo¿e tak¿e obs³u¿yæ mieszane
-8/16-bitowe zestawy znaków u¿ywane dla jêzyka chiñskiego). Ma obs³ugê
+%description -l pl.UTF-8
+Mined to edytor tekstu, maÅ‚y i Å‚atwy w uÅ¼yciu, a jednak potÄ™Å¼ny.
+UmoÅ¼liwia korzystanie z unikodu przy uÅ¼yciu kodowania UTF-8
+(konwertuje teÅ¼ wejÅ›cie w UTF-16; moÅ¼e takÅ¼e obsÅ‚uÅ¼yÄ‡ mieszane
+8/16-bitowe zestawy znakÃ³w uÅ¼ywane dla jÄ™zyka chiÅ„skiego). Ma obsÅ‚ugÄ™
 myszy (na terminalach tekstowych), menu, pasek przewijania i widoczne
-oznaczenia znaków specjalnych (szczególnie TABów i ró¿nych znaków
-koñca linii).
+oznaczenia znakÃ³w specjalnych (szczegÃ³lnie TABÃ³w i rÃ³Å¼nych znakÃ³w
+koÅ„ca linii).
 
 %prep
 %setup -q
