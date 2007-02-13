@@ -1,5 +1,5 @@
 Summary:	Mined is a Unicode-capable small and easy to use text editor
-Summary(pl.UTF-8):   Mined - korzystający z unikodu, mały, prosty w użyciu edytor
+Summary(pl.UTF-8):	Mined - korzystający z unikodu, mały, prosty w użyciu edytor
 Name:		mined
 Version:	2000.5
 Release:	0.1
