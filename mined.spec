@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc usrshare/package_doc/{README,CHANGES} doc/{*.html,*.gif}
+%doc usrshare/{package_doc/README,doc_user/*}
 %doc usrshare/{setup_install/bin/configure-xterm,bin/uterm}
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
