@@ -1,14 +1,14 @@
 Summary:	Mined is a Unicode-capable small and easy to use text editor
 Summary(pl.UTF-8):	Mined - korzystający z unikodu, mały, prosty w użyciu edytor
 Name:		mined
-Version:	2000.5
-Release:	0.1
+Version:	2000.14
+Release:	1
 License:	GPL
 Group:		Applications/Editors
 Vendor:		Thomas Wolff <mined@towo.net>
 #Source0Download:	http://towo.net/mined/download.html
 Source0:	http://towo.net/mined/%{name}-%{version}.tar.gz
-# Source0-md5:	135f2411359f61f994743df9ed5af1f7
+# Source0-md5:	829917760fa0cef2b8de91be8487169c
 #Source1:	%{name}.desktop
 #Source2:	%{name}.png
 Patch0:		%{name}-makeinstall.patch
@@ -66,7 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES README doc/*.html doc/*.gif doc/{configure-xterm,uterm,compilation}
+%doc usrshare/package_doc/{README,CHANGES} doc/{*.html,*.gif}
+%doc usrshare/{setup_install/bin/configure-xterm,bin/uterm}
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 #%{_applnkdir}/Editors/*

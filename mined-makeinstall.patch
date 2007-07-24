@@ -1,11 +1,11 @@
---- mined-2000.5/src/mkinclud.mak~	Wed Mar  5 23:35:58 2003
-+++ mined-2000.5/src/mkinclud.mak	Wed Mar  5 23:36:54 2003
-@@ -78,7 +78,7 @@
+--- mined-2000.14/src/mkinclud.mak~	2007-07-24 20:33:20.000000000 +0200
++++ mined-2000.14/src/mkinclud.mak	2007-07-24 20:46:24.000000000 +0200
+@@ -443,7 +443,7 @@
  # Online help:
- help:	../mined.hlp
+ help:	../usrshare/help/mined.hlp
  
--../mined.hlp:	../VERSION help/* mkhelp
-+../mined.hlp:	../VERSION mkhelp
- 	./mkhelp > ../mined.hlp
+-../usrshare/help/mined.hlp:	help/* mkhelp
++../usrshare/help/mined.hlp:	mkhelp
+ 	./mkhelp > ../usrshare/help/mined.hlp
  
  # Manual page:
